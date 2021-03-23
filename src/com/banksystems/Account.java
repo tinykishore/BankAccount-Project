@@ -71,6 +71,15 @@ abstract class Account {
         setOpeningDate(LocalDate.now());
     }
 
+    public Account(Account account){
+        setName(account.name);
+        setNidNO(account.nidNO);
+        setContactNumber(account.contactNumber);
+        setPresentAddress(account.presentAddress);
+        setOpeningDate(LocalDate.parse(account.getOpeningDate()));
+        setBalance(account.getBalance());
+    }
+
     // prints account details
     public void printAccountDetails() {
         System.out.println("Name                    : " + getName());
