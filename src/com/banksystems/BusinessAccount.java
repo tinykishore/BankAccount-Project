@@ -10,7 +10,7 @@ public class BusinessAccount extends Account{
         super(name, nidNO, contactNumber, presentAddress);
         if (balance < 2000) {
             System.out.println("Cannot Create Business Account. Deposit should be greater than or equal 2000");
-            exit(0);  // need a better way of solving this.
+            exit(0);    // Fixme : need a better way of solving this.
         } else {
             setBalance(balance);
         }

@@ -1,6 +1,8 @@
 package com.banksystems;
 
 import java.time.LocalDate;
+import java.util.Timer;
+import java.util.TimerTask;
 
 abstract class Account {
     private String name;
@@ -71,6 +73,7 @@ abstract class Account {
         setOpeningDate(LocalDate.now());
     }
 
+    // copy constructor
     public Account(Account account){
         setName(account.name);
         setNidNO(account.nidNO);
@@ -99,11 +102,30 @@ abstract class Account {
         else System.out.println("NOT ENOUGH MONEY, Remaining :" + this.balance);
     }
 
-    public void yearlyCharge() {
-        int accountAge = LocalDate.now().getYear() - openingDate.getYear();
-        setBalance(this.balance - ANNUAL_CHARGE*accountAge);
+
+    public static void yearlyCharge(Account account) {
+        account.setBalance(account.getBalance() - ANNUAL_CHARGE);
     }
 
     public abstract void interest();
+
+    /*
+
+    Fixme
+      For calling yearlyCharge() once in a year automatically.
+
+    public static void callFunctionSchedule() {
+
+        TimerTask timerTask = new TimerTask() {
+            @Override
+            public void run() {
+                yearlyCharge
+            }
+        };
+
+        Timer timer = new Timer();
+        timer.schedule(timerTask, 0 ,31536000);         // 1 year = 31,536,000 secs.
+    }
+    */
 
 }

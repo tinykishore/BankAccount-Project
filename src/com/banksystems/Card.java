@@ -1,8 +1,13 @@
+/*
+    Fixme
+        How to implement Card System...
+ */
+
 package com.banksystems;
 
 import java.time.LocalDate;
 
-abstract class Card{
+abstract class Card {
     private String cardHolderName;
     private String cardIdentifierNumber;
     private LocalDate validFrom;
@@ -49,8 +54,6 @@ abstract class Card{
     protected void setCvn(String cvn) {
         this.cvn = cvn;
     }
-
-
 
 
 }
