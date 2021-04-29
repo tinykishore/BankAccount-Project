@@ -2,7 +2,7 @@
 
 <h2><b>Question:</b></h2>
 
-<h4>Class Designing for Banking System<h4>
+<h4>Class Designing for Banking System</h4>
 
 In this assignment you need to design java classes for implementing a software system for banking.
 
