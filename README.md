@@ -1,8 +1,8 @@
-# BankAccount-Project
+<h1> <b> BankAccount-Project </b> </h1>
 
-##Question:
+<h2><b>Question:</b></h2>
 
-###Class Designing for Banking System
+<h4>Class Designing for Banking System<h4>
 
 In this assignment you need to design java classes for implementing a software system for banking.
 
