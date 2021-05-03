@@ -1,4 +1,4 @@
-<h1> <b> Assignment : BankAccount_Project </b> </h1>
+<h1> <b> Assignment : BankAccount_Assignment </b> </h1>
 
 <h2><b>Question:</b></h2>
 
